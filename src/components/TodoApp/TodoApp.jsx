@@ -12,14 +12,26 @@ state={
 handleChange=(e)=>this.setState({input:e.target.value})
 
 
-storeItems=()=>{
+storeItems=(e)=>{
+    e.preventDefault();
     const {input}=this.state;
-
+    const allItems=this.state.items;
+  allItems.push(input);
+  this.setState({items:allItems})
+  this.setState({input:""})
 }
+
+deleteItem=(index)=>{
+const allItems =this.state.items;
+allItems.splice(index,1)
+this.setState({items:allItems})
+}
+
 
     render(){
 
-        const {input}=this.state;
+
+        const {input,items}=this.state;
 
         return(
             <div >
@@ -39,7 +51,9 @@ storeItems=()=>{
         </form>
 
         <ul >
-        <li>Items <i className="fas fa-trash-alt"></i></li>
+     {items.map((data,index)=>(
+ <li key={index}>{data}<i className="fas fa-trash-alt" onClick={()=>this.deleteItem(index)}></i></li>
+      ))} 
         
         </ul>
 </div>
