@@ -23,7 +23,7 @@ h1{
 }
 
 .input-section{
-background: #056679;
+background: #055565;
 padding: 18px;
 border-radius: 10px;
     box-shadow: 0 4px 6px rgb(73, 73, 73);
@@ -35,10 +35,13 @@ border: 1px solid silver;
 box-sizing: border-box;
 padding: 10px;
 width: 100%;
+background:  #055565;
+color:  #08869e;;
 }
 
 input::placeholder{
-    color: silver;
+    color:  #08869e;
+
 }
 
 
@@ -51,10 +54,15 @@ text-align: left;
 ul li{
     box-shadow: 0 4px 6px rgb(73, 73, 73);
     list-style: none;
-    background-color: white;
+    background-color:  #055565;
     padding: 15px;
     margin-bottom: 10px;
-    color :grey;
+    color : #08869e;
 border-radius: 8px;
+display: flex;
 
+}
+ul li i{
+    text-align: right;
+    flex: 1;
 }
