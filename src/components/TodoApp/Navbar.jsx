@@ -5,7 +5,7 @@ import  './Navbar.css';
 function Navbar(){
 return(
     <div className="Navbar">
-'Todo-List' React app by Kevin Jacob
+'To do-List' React app by Kevin Jacob
         </div>
 )
 }
