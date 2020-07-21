@@ -41,7 +41,7 @@ this.setState({items:allItems})
         <form className="input-section" 
         onSubmit={this.storeItems}>
 
-        <h1>Todo App</h1>
+        <h1>To do App</h1>
         <input 
         value={input}
         onChange={this.handleChange}
